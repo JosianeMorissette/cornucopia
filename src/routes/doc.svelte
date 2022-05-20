@@ -25,26 +25,50 @@
 <SidebarLayout>
 	<!-- Sidebar -->
 	<div slot="sidebar">
-		<SidebarButton title="Install"><Download /></SidebarButton>
-		<SidebarCollapsible title="Examples">
+		<SidebarButton>
+			<div slot="icon">
+				<Download />
+			</div>
+			<svelte:fragment slot="title">Install</svelte:fragment>
+		</SidebarButton>
+		<SidebarCollapsible>
 			<div slot="icon">
 				<Tune />
 			</div>
+
+			<svelte:fragment slot="title">Examples</svelte:fragment>
 			<div slot="content">
-				<SidebarButton collapsible title="Basic" />
-				<SidebarButton collapsible title="Advanced" />
+				<SidebarButton collapsible
+					><svelte:fragment slot="title">Basic</svelte:fragment></SidebarButton
+				>
+				<SidebarButton collapsible>
+					<svelte:fragment slot="title">Advanced</svelte:fragment>
+				</SidebarButton>
 			</div>
 		</SidebarCollapsible>
 
 		<SidebarDivider />
 
-		<SidebarCollapsible title="Contribute">
+		<SidebarCollapsible>
 			<div slot="icon">
 				<Person />
 			</div>
+			<svelte:fragment slot="title">
+				Contribute
+				<div class="flex-grow" />
+				<Badge>New!</Badge>
+			</svelte:fragment>
 			<div slot="content">
-				<SidebarButton collapsible title="Basic" />
-				<SidebarButton collapsible title="Advanced" />
+				<SidebarButton collapsible
+					><svelte:fragment slot="title">Basic</svelte:fragment></SidebarButton
+				>
+				<SidebarButton collapsible
+					><svelte:fragment slot="title">
+						Advanced
+						<div class="flex-grow" />
+						<Badge>New!</Badge>
+					</svelte:fragment></SidebarButton
+				>
 			</div>
 		</SidebarCollapsible>
 	</div>
@@ -56,11 +80,11 @@
 
 		<Paragraph
 			>You can use my svelte component to add the content, like this paragraph! You can use the html
-			tags for h1 to h6 directly has you can see above! I made it with all my love. You can put a
-			<Badge text="badge" /> to accentuate important parts Since you're important to me, I'd like to
-			give you a badge. If you want it of course! or add <i>italic</i>, <b>bold</b> and
+			tags for headings directly has you can see above! You can put a
+			<Badge>Badge</Badge> to accentuate important parts. Or you can add
+			<i>italic</i>, <b>bold</b> and
 			<strong>strong</strong>
-			text! I made a
+			text! We made a
 			<BoldItalic>bold and italic</BoldItalic> and
 			<StrongItalic>strong and italic</StrongItalic>
 			compotents too! You can use <Link

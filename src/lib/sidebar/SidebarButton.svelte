@@ -1,5 +1,4 @@
 <script lang="ts">
-	export let title = 'title';
 	export let collapsible = false;
 
 	let button_class =
@@ -7,14 +6,18 @@
 </script>
 
 {#if collapsible}
-	<button class="{button_class} pl-8 text-lg hover:text-xl ">
-		{title}
+	<button class="{button_class} px-8 text-lg hover:text-xl ">
+		<div class="flex items-center flex-grow text-left">
+			<slot name="title">Empty title</slot>
+		</div>
 	</button>
 {:else}
 	<button class="{button_class} text-lg  ">
 		<div class="mr-2 h-6 w-6">
-			<slot />
+			<slot name="icon" />
 		</div>
-		<div>{title}</div>
+		<div class="pr-8 flex items-center flex-grow text-left">
+			<slot name="title">Empty title</slot>
+		</div>
 	</button>
 {/if}

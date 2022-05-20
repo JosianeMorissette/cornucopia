@@ -1,7 +1,5 @@
 <script>
 	import Collapsible from '$lib/Collapsible.svelte';
-
-	export let title = 'title';
 </script>
 
 <Collapsible
@@ -13,11 +11,13 @@
 				<slot name="icon" />
 			</div>
 
-			<div>{title}</div>
+			<div class=" tracking-wider flex items-center flex-grow text-left">
+				<slot name="title">Empty title</slot>
+			</div>
 		</div>
 	</div>
 
 	<div slot="content">
-		<slot name="content" />
+		<slot name="content">Empty content</slot>
 	</div>
 </Collapsible>
