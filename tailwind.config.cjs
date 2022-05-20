@@ -17,26 +17,26 @@ const config = {
 		themes: [
 			{
 				mytheme: {
-					primary: '#ffc029ff' /* primary color */,
-					'primary-focus': '#e9a30cff' /* primary color - focused */,
-					'primary-content': '#080702ff' /* Foreground content color to use on primary color */,
+					primary: '#BA76F9' /* primary color */,
+					'primary-focus': '#8617f7ff' /* primary color - focused */,
+					'primary-content': '#080602ff' /* Foreground content color to use on primary color */,
 
-					secondary: '#a855f7ff' /* secondary color */,
-					'secondary-focus': '#8617f7ff' /* secondary  color - focused */,
-					'secondary-content': '#080702ff' /* Foreground content color to use on secondary color */,
+					secondary: '#ffdf8aff' /* secondary color */,
+					'secondary-focus': '#957e45ff' /* secondary  color - focused */,
+					'secondary-content': '#080602ff' /* Foreground content color to use on secondary color */,
 
-					accent: '#825f03ff' /* Accent color */,
-					'accent-focus': '#684603ff' /* Accent color - focused */,
-					'accent-content': '#080702ff' /* Foreground content color to use on accent color */,
+					accent: '#452c02ff' /* Accent color */,
+					'accent-focus': '#382402ff' /* Accent color - focused */,
+					'accent-content': '#080602ff' /* Foreground content color to use on accent color */,
 
-					neutral: '#080702ff' /* Neutral color */,
-					'neutral-focus': '#11224f' /* Neutral color - focused */,
-					'neutral-content': '#f4f5ff' /* Foreground content color to use on neutral color */,
+					neutral: '#ffc029ff' /* Neutral color */,
+					'neutral-focus': '#e9a30cff' /* Neutral color - focused */,
+					'neutral-content': '#080602ff' /* Foreground content color to use on neutral color */,
 
-					'base-100': '#fcfdfd' /* Base color of page, used for blank backgrounds */,
-					'base-200': '#f3f4f6' /* Base color, a little darker */,
-					'base-300': '#d1d5db' /* Base color, even more darker dcdfe6 */,
-					'base-content': '#111827' /* Foreground content color to use on base color */,
+					'base-100': '#080602ff' /* Base color of page, used for blank backgrounds */,
+					'base-200': '#1a191aff' /* Base color, a little darker */,
+					'base-300': '#272627ff' /* Base color, even more darker dcdfe6 */,
+					'base-content': '#f8f6e8ff' /* Foreground content color to use on base color */,
 
 					info: '#2094f3' /* Info */,
 					success: '#61a744ff' /* Success */,
