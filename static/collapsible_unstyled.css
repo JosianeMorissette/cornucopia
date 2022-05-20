@@ -1,0 +1,24 @@
+.collapsible {
+	@apply relative grid overflow-hidden;
+}
+
+.collapsible-title,
+.collapsible>input[type='checkbox'],
+.collapsible-content {
+	@apply row-start-1 col-start-1;
+}
+
+.collapsible>input[type='checkbox'] {
+	@apply appearance-none opacity-0;
+}
+
+.collapsible-content {
+	@apply row-start-2 overflow-hidden;
+	max-height: 0px;
+}
+
+.collapsible-open .collapsible-content,
+.collapsible:focus:not(.collapsible-close) .collapsible-content,
+.collapsible:not(.collapsible-close) input[type='checkbox']:checked~.collapsible-content {
+	max-height: 9000px;
+}
