@@ -5,6 +5,7 @@
 
 <svg
 	class="{componentClass} flex-none"
+	id="Discord logo"
 	fill="currentColor"
 	viewBox="0 0 50 50"
 	xmlns="http://www.w3.org/2000/svg"

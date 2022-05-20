@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Github from './icons/companies/Github.svelte';
+
 	import Logo from './Logo.svelte';
 </script>
 
@@ -20,15 +22,10 @@
 			</a>
 
 			<a
-				class="h-15 w-15 btn-circle btn-ghost hover:bg-neutral flex items-center justify-center p-1"
+				class=" hover:text-black w-11 h-11 md:h-15 md:w-15 btn-circle btn-ghost hover:bg-neutral flex items-center justify-center md:p-1"
 				href="https://github.com/LouisGariepy/cornucopia"
 			>
-				<img
-					alt="Office"
-					aria-hidden="true"
-					class=" w-12 h-12 md:w-11 md:h-11"
-					src="/static/WhiteGithub.svg"
-				/>
+				<Github class="w-12 h-12 mb-[1px] md:w-10 md:h-10" />
 			</a>
 		</div>
 	</div>
