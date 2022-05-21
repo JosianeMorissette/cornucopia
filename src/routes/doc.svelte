@@ -26,23 +26,16 @@
 	<!-- Sidebar -->
 	<div slot="sidebar">
 		<SidebarButton>
-			<div slot="icon">
-				<Download />
-			</div>
-			<svelte:fragment slot="title">Install</svelte:fragment>
+			<Download slot="icon" />
+			<h1 slot="title">Install</h1>
 		</SidebarButton>
 		<SidebarCollapsible>
-			<div slot="icon">
-				<Tune />
-			</div>
-
-			<svelte:fragment slot="title">Examples</svelte:fragment>
+			<Tune slot="icon" />
+			<h1 slot="title">Examples</h1>
 			<div slot="content">
-				<SidebarButton collapsible
-					><svelte:fragment slot="title">Basic</svelte:fragment></SidebarButton
-				>
+				<SidebarButton collapsible><h2 slot="title">Basic</h2></SidebarButton>
 				<SidebarButton collapsible>
-					<svelte:fragment slot="title">Advanced</svelte:fragment>
+					<h2 slot="title">Advanced</h2>
 				</SidebarButton>
 			</div>
 		</SidebarCollapsible>
@@ -50,18 +43,15 @@
 		<SidebarDivider />
 
 		<SidebarCollapsible>
-			<div slot="icon">
-				<Person />
-			</div>
+			<Person slot="icon" />
+
 			<svelte:fragment slot="title">
 				Contribute
 				<div class="flex-grow" />
 				<Badge>New!</Badge>
 			</svelte:fragment>
 			<div slot="content">
-				<SidebarButton collapsible
-					><svelte:fragment slot="title">Basic</svelte:fragment></SidebarButton
-				>
+				<SidebarButton collapsible><h2 slot="title">Basic</h2></SidebarButton>
 				<SidebarButton collapsible
 					><svelte:fragment slot="title">
 						Advanced
@@ -140,6 +130,15 @@
 			>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas beatae distinctio at
 			necessitatibus modi consectetur dolorem numquam laborum provident amet!</Code
 		>
-		<Button content="A button" />
+		<Button>
+			<img
+				alt="Office"
+				aria-hidden="true"
+				class="w-4 h-4 mr-2  "
+				src="/static/BoldBlackIcon44x44.svg"
+			/>
+
+			button
+		</Button>
 	</div>
 </SidebarLayout>
