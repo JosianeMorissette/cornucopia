@@ -2,7 +2,7 @@
 	export let collapsible = false;
 
 	let button_class =
-		'rounded-none h-11 border-0 text-gray-200 hover:bg-transparent hover:text-primary tracking-wider font-normal btn btn-ghost justify-start capitalize w-full flex items-center';
+		'rounded-none h-11 border-0 text-zinc-200 hover:bg-transparent hover:text-primary tracking-wider font-normal btn btn-ghost justify-start capitalize w-full flex items-center';
 </script>
 
 {#if collapsible}

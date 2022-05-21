@@ -3,7 +3,7 @@
 </script>
 
 <Collapsible
-	class="collapsible-arrow text-gray-200 hover:text-primary capitalize w-full text-lg tracking-wide font-normal"
+	class="collapsible-arrow text-zinc-200 hover:text-primary capitalize w-full text-lg tracking-wide font-normal"
 >
 	<div slot="title">
 		<div class="flex items-center space-x-2  ">
