@@ -1,9 +1,10 @@
 <script lang="ts">
 	import ArrowForward from '$lib/icons/ArrowForward.svelte';
-
 	export let title = 'Shooting';
 	export let content = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.';
 	export let button = 'Learn More';
+
+	export let href: string;
 </script>
 
 <div
@@ -34,7 +35,7 @@
 			{content}
 		</p>
 		<!-- TODO do a href propriety link to the doc -->
-		<a href="" class=" text-primary-focus inline-flex items-center"
+		<a {href} class=" text-primary-focus inline-flex items-center"
 			>{button}
 			<ArrowForward class="h-4 w-4 ml-2" />
 		</a>

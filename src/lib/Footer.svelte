@@ -1,4 +1,4 @@
-<footer class="text-zinc-400 body-font pt-32 pb-10">
+<footer class=" text-zinc-400 body-font my-10">
 	<div class="container sm:py-8 mx-auto flex items-center sm:flex-row flex-col">
 		<div
 			href="https://github.com/LouisGariepy/cornucopia"
