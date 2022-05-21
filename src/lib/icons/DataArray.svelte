@@ -4,6 +4,7 @@
 </script>
 
 <svg
+	id="DataArray"
 	xmlns="http://www.w3.org/2000/svg"
 	class="{componentClass} flex-none"
 	fill="currentColor"
