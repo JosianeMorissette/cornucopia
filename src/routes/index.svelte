@@ -2,6 +2,7 @@
 	import Feature from '$lib/Feature.svelte';
 	import Footer from '$lib/Footer.svelte';
 	import Autorenew from '$lib/icons/Autorenew.svelte';
+	import Github from '$lib/icons/companies/Github.svelte';
 	import DataArray from '$lib/icons/DataArray.svelte';
 	import ElectricBolt from '$lib/icons/ElectricBolt.svelte';
 	import Person from '$lib/icons/Person.svelte';
@@ -32,13 +33,13 @@
 			<div class="tracking-tight md:tracking-wide font-light">from your PostgreSQL</div>
 		</div>
 		<h1 class="mt-3 w-full tracking-wide md:text-xl ">
-			Cornucopia is a small CLI utility resting on <Badge text="tokio-postgres" />
+			Cornucopia is a small CLI utility resting on <Badge>tokio-postgres</Badge>
 			designed to facilitate PostgreSQL workflows in Rust.
 		</h1>
 
 		<div class=" w-full ">
 			<a
-				class=" mt-20 btn btn-ghost btn-lg hover:bg-primary-focus  hover:brightness-100 border-0 w-full font-semibold rounded-full lg:h-24 lg:text-2xl bg-base-content text-black tracking-wider  "
+				class=" mt-20 btn btn-primary btn-lg w-full font-semibold rounded-full lg:h-24 lg:text-2xl text-black tracking-wider  "
 				href="/doc"
 			>
 				Try it yourself!
@@ -113,7 +114,7 @@
 	</section>
 
 	<!-- hero -->
-	<section class="text-gray-400 w-full mx-auto space-y-32 max-w-7xl pt-24 pb-16 body-font">
+	<section class="text-zinc-400 w-full mx-auto space-y-32 max-w-7xl pt-24 pb-16 body-font">
 		<div class="container pt-20 md:pt-36 pb-20 md:pb-[590px] flex flex-wrap">
 			<div class="w-2/3 sm:w-1/3 rounded-lg overflow-hidden mb-6 sm:mb-0">
 				<img
@@ -186,7 +187,7 @@
 		</div>
 		<div />
 		<div
-			class="bottom-96 left-0 sm:left-40 md:absolute font-semibold text-3xl -ml-1 sm:ml-o md:text-5xl space-y-16"
+			class="z-10 bottom-96 left-0 sm:left-40 md:absolute font-semibold text-3xl -ml-1 sm:ml-o md:text-5xl space-y-16"
 		>
 			<h1
 				class="text-center text-base-content md:text-left tracking-tighter sm:tracking-wide leading-snug"
@@ -207,7 +208,7 @@
 					href="/doc"
 					class="btn z-50 lg:h-24 flex-1 btn-lg  rounded-full btn-primary normal-case text-xl"
 				>
-					Read all about it!
+					How to contribute
 				</a>
 				<!-- discord link-->
 				<a
@@ -219,13 +220,8 @@
 			</div>
 		</div>
 
-		<div class="absolute bottom-6 md:bottom-0 right-0 h-[780px] opacity-10">
-			<img
-				alt="Office"
-				aria-hidden="true"
-				class="w-full h-full self-end"
-				src="/static/WhiteGithub.svg"
-			/>
+		<div class="absolute bottom-6 md:bottom-0 right-0 h-[780px] text-zinc-900 text-opacity-70">
+			<Github class="w-full h-full self-end" />
 		</div>
 	</section>
 	<Footer />

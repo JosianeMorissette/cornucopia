@@ -3,6 +3,6 @@
 	export let link: string;
 </script>
 
-<a class="link link-primary whitespace-nowrap" {href}>
+<a class="link link-neutral whitespace-nowrap" {href}>
 	{link}
 </a>

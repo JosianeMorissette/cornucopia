@@ -72,6 +72,7 @@
 			</div>
 		</SidebarCollapsible>
 	</div>
+
 	<!-- Content with typo -->
 	<div slot="content">
 		<h1>This example has a h1 title</h1>
@@ -79,15 +80,11 @@
 		<h2>And a 2h title with its own style!</h2>
 
 		<Paragraph
-			>You can use my svelte component to add the content, like this paragraph! You can use the html
-			tags for headings directly has you can see above! You can put a
-			<Badge>Badge</Badge> to accentuate important parts. Or you can add
-			<i>italic</i>, <b>bold</b> and
-			<strong>strong</strong>
-			text! We made a
-			<BoldItalic>bold and italic</BoldItalic> and
-			<StrongItalic>strong and italic</StrongItalic>
-			compotents too! You can use <Link
+			>We can use my svelte component to add the content, like this paragraph! We can use the html
+			tags for headings directly! Or you can add<i>italic</i>, <b>bold</b> and
+			<strong>strong</strong> text! We made a <BoldItalic>bold and italic</BoldItalic> and
+			<StrongItalic>strong and italic</StrongItalic>compotents too! You can use
+			<Link
 				href="google.com"
 				link="a link to a webiste
 			"
