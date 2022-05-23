@@ -74,13 +74,11 @@
 			tags for headings directly! Or you can add<i>italic</i>, <b>bold</b> and
 			<strong>strong</strong> text! We made a <BoldItalic>bold and italic</BoldItalic> and
 			<StrongItalic>strong and italic</StrongItalic>compotents too! You can use
-			<Link
-				href="google.com"
-				link="a link to a webiste
-			"
-			/>. You can even add emojis! How cool is that?! 🤗
+			<Link href="google.com">a link to a webiste</Link>. You can even add emojis! How cool is
+			that?! 🤗
 		</Paragraph>
 
+		<!-- Grid-->
 		<h3>This grid is easy to use!</h3>
 		<Table>
 			<svelte:fragment slot="th">

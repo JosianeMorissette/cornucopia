@@ -165,7 +165,7 @@
 					</a>
 
 					<!-- Stars -->
-					<a href="https://github.com/LouisGariepy/cornucopia">
+					<a href="https://github.com/LouisGariepy/cornucopia/stargazers">
 						<img
 							class="grid-col-1"
 							alt="GitHub Repo stars"
@@ -174,7 +174,7 @@
 					</a>
 
 					<!-- Open issues-->
-					<a href="https://github.com/LouisGariepy/issues">
+					<a href="https://github.com/LouisGariepy/cornucopia/issues">
 						<img
 							class="grid-col-1"
 							alt="GitHub issues"
@@ -183,7 +183,7 @@
 					</a>
 
 					<!-- License -->
-					<a href="https://github.com/LouisGariepy/blob/main/LICENSE">
+					<a href="https://github.com/LouisGariepy/cornucopia/blob/main/LICENSE">
 						<img
 							class="grid-col-1"
 							alt="Crates.io"
