@@ -1,12 +1,8 @@
 <script lang="ts">
-	import ArrowForward from '$lib/icons/ArrowForward.svelte';
-	import Person from './icons/Person.svelte';
-	import LearnMore from './LearnMore.svelte';
+	import Person from '$lib/icons/Person.svelte';
+
 	export let title = 'Shooting';
 	export let content = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.';
-	export let button = 'Learn More';
-
-	export let href: string;
 </script>
 
 <div
@@ -26,7 +22,5 @@
 		<p>
 			{content}
 		</p>
-		<!-- TODO do a href propriety link to the doc -->
-		<LearnMore bind:href bind:button />
 	</div>
 </div>
