@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Feature from '$lib/Feature.svelte';
-	import Footer from '$lib/Footer.svelte';
-	import Autorenew from '$lib/icons/Autorenew.svelte';
+	import Feature from '$lib/layout/Feature.svelte';
+	import Footer from '$lib/navigation/Footer.svelte';
+	import Autorenew from '$lib/icons/actions/Autorenew.svelte';
 	import Github from '$lib/icons/companies/Github.svelte';
 	import DataArray from '$lib/icons/DataArray.svelte';
 	import ElectricBolt from '$lib/icons/ElectricBolt.svelte';
@@ -10,9 +10,13 @@
 	import Storage from '$lib/icons/Storage.svelte';
 	import Timer from '$lib/icons/Timer.svelte';
 	import Tune from '$lib/icons/Tune.svelte';
-	import NavLayout from '$lib/NavLayout.svelte';
+	import NavLayout from '$lib/navigation/NavLayout.svelte';
 	import Badge from '$lib/tags/Badge.svelte';
 </script>
+
+<svelte:head>
+	<title>About Cornucopia</title>
+</svelte:head>
 
 <NavLayout>
 	<section class="ml-4 mt-40 w-full flex flex-col items-start  ">
@@ -37,7 +41,7 @@
 
 			<a
 				class="mt-14 btn btn-primary btn-lg w-full font-semibold rounded-full lg:h-24 lg:text-2xl text-black tracking-wider  "
-				href="/doc"
+				href="/doc/install"
 			>
 				Try it yourself!
 			</a>
@@ -48,15 +52,10 @@
 	<section class="mx-auto flex flex-col items-center my-24 sm:my-32">
 		<div class="w-full border-y-2 py-4 md:py-16 border-primary border-opacity-60">
 			<div class="flex flex-wrap ">
-				<Feature
-					href="./doc"
-					title="SQL-first"
-					content=" Your database schema is the source of truth. No ORM."
-				>
+				<Feature title="SQL-first" content=" Your database schema is the source of truth. No ORM.">
 					<Storage />
 				</Feature>
 				<Feature
-					href="./doc"
 					title="Custom user types"
 					content="Support custom user types like composites, enums, domains and one-dimensional array"
 				>
@@ -64,46 +63,41 @@
 				</Feature>
 
 				<Feature
-					href="./doc"
 					title="Asynchronous streams"
 					content="Strongly-typed async row streams suitable for web servers."
 				>
 					<ElectricBolt />
 				</Feature>
 				<Feature
-					href="./doc"
 					title="Nullable return columns"
 					content=" Allow the user to have nullable return colums."
 				>
 					<DataArray />
 				</Feature>
 				<Feature
-					href="./doc"
 					title="Self managed"
 					content="Build your queries against your own live database, or let Cornucopia manage that for you."
 				>
 					<PrecisionManifacturing />
 				</Feature>
 				<Feature
-					href="./doc"
 					title="Flexible connexion types"
 					content="Use, mix and match the connection types that you want: pooled or not, transaction or not."
 				>
 					<Tune />
 				</Feature>
 				<Feature
-					href="./doc"
 					title="Compatible with build.rs"
 					content="Rebuild Rust queries whenever SQL files change."
 				>
 					<Autorenew />
 				</Feature>
-				<Feature href="./doc" title="No macros" content=" No macros, respects your compile times.">
+				<Feature title="No macros" content=" No macros, respects your compile times.">
 					<Timer />
 				</Feature>
 
 				<!-- TODO 9th feature -->
-				<Feature href="./doc" />
+				<Feature />
 			</div>
 
 			<div class="py-8 xl:py-4">
@@ -123,7 +117,7 @@
 			<div class="xl:max-w-md lg:max-w-xs lg:w-full w-5/6 mb-10 lg:mb-0  bg-opacity-5">
 				<img
 					class="w-full max-w-72 sm:max-h-96 xl:max-h-[26rem] h-full "
-					alt="hero"
+					alt="Minimalist version of the logo"
 					src="/static/InvertedBgWhiteIcon44x44.svg"
 				/>
 			</div>
@@ -213,7 +207,7 @@
 		<div class=" sm:ml-1 self-center md:self-start space-y-8 flex-col max-w-sm sm:max-w-md">
 			<!-- contributing section-->
 			<a
-				href="/doc"
+				href="/doc/install"
 				class="btn w-full z-50 flex-1 btn-lg rounded-full btn-primary normal-case text-xl"
 			>
 				How to contribute
