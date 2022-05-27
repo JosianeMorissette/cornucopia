@@ -159,25 +159,25 @@
 					</a>
 
 					<!-- Stars -->
-					<a href="https://github.com/LouisGariepy/cornucopia/stargazers">
+					<a href="https://github.com/cornucopia-rs/cornucopia/stargazers">
 						<img
 							class="grid-col-1"
 							alt="GitHub Repo stars"
-							src="https://img.shields.io/github/stars/LouisGariepy/cornucopia?color=%23D97706&logo=github&style=for-the-badge"
+							src="https://img.shields.io/github/stars/cornucopia-rs/cornucopia?color=%23D97706&logo=github&style=for-the-badge"
 						/>
 					</a>
 
 					<!-- Open issues-->
-					<a href="https://github.com/LouisGariepy/cornucopia/issues">
+					<a href="https://github.com/cornucopia-rs/cornucopia/issues">
 						<img
 							class="grid-col-1"
 							alt="GitHub issues"
-							src="https://img.shields.io/github/issues-raw/LouisGariepy/cornucopia?logo=github&style=for-the-badge"
+							src="https://img.shields.io/github/issues-raw/cornucopia-rs/cornucopia?logo=github&style=for-the-badge"
 						/>
 					</a>
 
 					<!-- License -->
-					<a href="https://github.com/LouisGariepy/cornucopia/blob/main/LICENSE">
+					<a href="https://github.com/cornucopia-rs/cornucopia#License">
 						<img
 							class="grid-col-1"
 							alt="Crates.io"
@@ -214,7 +214,7 @@
 			</a>
 			<!-- discord link-->
 			<a
-				href="https://github.com/LouisGariepy/cornucopia"
+				href="https://github.com/cornucopia-rss/cornucopia"
 				class="btn btn-lg btn-outline w-full z-50  rounded-full flex-1 btn-primary normal-case text-xl"
 			>
 				Take a look at the github

@@ -3,10 +3,10 @@
 		<p class="text-sm  py-2 text-zinc-400">
 			© 2022 — Cornucopia-rs contributor
 			<a
-				href="https://github.com/LouisGariepy"
+				href="https://github.com/cornucopia-rs/cornucopia"
 				class="text-zinc-500 ml-1"
 				target="_blank"
-				rel="noopener noreferrer">@LouisGariepy</a
+				rel="noopener noreferrer">@Cornucopia-rs</a
 			>
 		</p>
 	</div>
