@@ -17,10 +17,5 @@
 		placeat corporis natus amet in a laudantium doloremque?
 	</p>
 
-	<img
-		class="w-full h-full"
-		alt="Basic example"
-		aria-hidden="true"
-		src="/static/CornucopiaDiagram.svg"
-	/>
+	<img class="w-full h-full" alt="Basic example" aria-hidden="true" src="/CornucopiaDiagram.svg" />
 </DocLayout>

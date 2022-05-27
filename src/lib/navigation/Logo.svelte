@@ -8,7 +8,7 @@
 			alt="Logo Cornucopia"
 			aria-hidden="true"
 			class=" w-12 h-12 md:w-14 md:h-14 hover:animate-[spin_0.5s_ease_1] "
-			src="/static/LogoCornucopia.svg"
+			src="/LogoCornucopia.svg"
 		/>
 
 		<div class=" text-4xl font-light hidden lg:block">cornucopia</div>

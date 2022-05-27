@@ -41,7 +41,7 @@
 			alt="Diagram of a use case of cornucopia"
 			aria-hidden="true"
 			class="w-full h-full"
-			src="/static/CornucopiaDiagram.svg"
+			src="/CornucopiaDiagram.svg"
 		/>
 	</div>
 
@@ -96,12 +96,7 @@
 		necessitatibus modi consectetur dolorem numquam laborum provident amet!</Code
 	>
 	<Button>
-		<img
-			alt="Office"
-			aria-hidden="true"
-			class="w-4 h-4 mr-2  "
-			src="/static/BoldBlackIcon44x44.svg"
-		/>
+		<img alt="Office" aria-hidden="true" class="w-4 h-4 mr-2  " src="/BoldBlackIcon44x44.svg" />
 
 		button
 	</Button>

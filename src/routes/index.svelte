@@ -118,7 +118,7 @@
 				<img
 					class="w-full max-w-72 sm:max-h-96 xl:max-h-[26rem] h-full "
 					alt="Minimalist version of the logo"
-					src="/static/InvertedBgWhiteIcon44x44.svg"
+					src="/InvertedBgWhiteIcon44x44.svg"
 				/>
 			</div>
 			<div class="   lg:w-1/2 lg:pl-24 flex flex-col  lg:items-start md:text-left items-center ">

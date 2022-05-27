@@ -20,9 +20,9 @@ const config = {
 			assets: 'docs',
 		}),
 		paths: {
-			base: dev ? '' : '/cornucopia',
+			//base: dev ? '' : '/cornucopia',
 		},
-
+		prerender: { default: true },
 		vite: {
 			server: {
 				fs: {
