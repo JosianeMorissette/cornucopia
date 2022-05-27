@@ -49,7 +49,7 @@
 	</section>
 
 	<!--Features-->
-	<section class="mx-auto flex flex-col items-center my-24 sm:my-32">
+	<section class="mx-auto flex flex-col  items-center my-24 sm:my-40">
 		<div class="w-full border-y-2 py-4 md:py-16 border-primary border-opacity-60">
 			<div class="flex flex-wrap ">
 				<Feature title="SQL-first" content=" Your database schema is the source of truth. No ORM.">
@@ -112,21 +112,21 @@
 	<!-- Hero-->
 	<section class="text-zinc-400 body-font ">
 		<div
-			class="container mx-auto flex  px-5 py-24  sm:pb-96 lg:flex-row justify-center flex-col items-center"
+			class="container mx-auto flex  px-5 py-16  sm:pb-96 xl:pb-[27rem] lg:flex-row justify-center flex-col items-center"
 		>
-			<div class="xl:max-w-md lg:max-w-xs lg:w-full w-5/6 mb-10 lg:mb-0  bg-opacity-5">
+			<div class="xl:max-w-md lg:max-w-xs lg:w-full w-5/6 mb-10 lg:mb-0">
 				<img
-					class="w-full max-w-72 sm:max-h-96 xl:max-h-[26rem] h-full "
+					class="w-full max-w-72 sm:max-h-96 xl:max-h-[26rem] h-full brightness-75"
 					alt="Minimalist version of the logo"
 					src="/InvertedBgWhiteIcon44x44.svg"
 				/>
 			</div>
-			<div class="   lg:w-1/2 lg:pl-24 flex flex-col  lg:items-start md:text-left items-center ">
+			<div class=" lg:w-1/2 lg:pl-24 flex flex-col  lg:items-start md:text-left items-center ">
 				<h1
 					class="title-font text-center sm:text-left sm:text-4xl text-3xl mb-4 font-medium text-zinc-200"
 				>
-					Cornucopia is designed to
-					<br class="hidden lg:inline-block" />facilitate PostgreSQL in Rust
+					Designed to facilitate
+					<br class="hidden lg:inline-block " />PostgreSQL in Rust
 				</h1>
 				<div class="prose pb-16">
 					<ul>
@@ -145,10 +145,7 @@
 						</li>
 					</ul>
 				</div>
-				<div
-					class="grid grid-cols-2  gap-4
-		 sm:w-full sm:flex sm:flex-row sm:items-center"
-				>
+				<div class="grid grid-cols-2  gap-4 sm:w-full sm:flex sm:flex-row sm:items-center">
 					<!-- Downloads -->
 					<a href="https://crates.io/crates/cornucopia">
 						<img
@@ -222,7 +219,7 @@
 		</div>
 
 		<div
-			class="absolute mb-20 sm:pt-32 -z-50 bottom-0 right-0 h-[34rem]  sm:h-[56rem] text-zinc-900 text-opacity-70"
+			class="absolute mb-20 xl:mb-[5rem] sm:pt-32 -z-50 bottom-0 right-0 h-[34rem]  sm:h-[56rem] text-zinc-900 text-opacity-70"
 		>
 			<Github class="w-full h-full " />
 		</div>
