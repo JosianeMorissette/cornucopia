@@ -9,8 +9,6 @@
 	import LinkButton from '$lib/actions/LinkButton.svelte';
 	import CloseIcon from '$lib/icons/actions/CloseIcon.svelte';
 
-	function handleClick() {}
-
 	export let sidebar: boolean;
 
 	function sidebarState() {

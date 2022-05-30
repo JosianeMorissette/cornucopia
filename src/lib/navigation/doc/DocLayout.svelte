@@ -1,11 +1,6 @@
 <script>
-	import { appState } from '$lib/utils/appState';
 	import NavLayout from '../NavLayout.svelte';
 	import DocSidebar from './DocSidebar.svelte';
-
-	function sidebarState() {
-		$appState.sidebarOpen = !$appState.sidebarOpen;
-	}
 </script>
 
 <NavLayout sidebar>
