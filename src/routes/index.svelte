@@ -19,13 +19,11 @@
 </svelte:head>
 
 <NavLayout>
-	<section class="ml-4 mt-40 w-full flex flex-col items-start  ">
+	<section class=" mt-40 w-full flex flex-col items-center sm:items-start text-center sm:text-left">
 		<div
-			class="uppercase sm:normal-case text-xl sm:text-5xl md:text-6xl lg:text-7xl italic space-y-2 lg:space-y-5 text-neutral"
+			class="uppercase sm:normal-case text-xl sm:text-4xl md:text-5xl lg:text-7xl space-y-2 lg:space-y-5 text-neutral italic"
 		>
-			<h1
-				class="font-semibold -tracking-wide sm:-tracking-wide md:tracking-tighter whitespace-nowrap"
-			>
+			<h1 class="font-semibold ">
 				Generate <b
 					class="font-semibold underline underline-offset-2 lg:underline-offset-4 text-neutral "
 					>type checked</b
@@ -33,24 +31,24 @@
 			</h1>
 			<h2 class="tracking-tight md:tracking-wide font-light">from your PostgreSQL</h2>
 		</div>
-		<div class="max-w-xs sm:max-w-xl xl:max-w-2xl  w-full">
+		<div class=" max-w-xs sm:max-w-xl xl:max-w-2xl  w-full">
 			<h3 class="mt-3 w-full tracking-wide md:text-xl ">
 				Cornucopia is a small CLI utility resting on <Badge>tokio-postgres</Badge>
 				designed to facilitate PostgreSQL workflows in Rust.
 			</h3>
 
 			<a
-				class="mt-14 btn btn-primary btn-lg w-full font-semibold rounded-full lg:h-24 lg:text-2xl text-black tracking-wider  "
+				class="mt-14 btn btn-primary btn-lg w-full font-semibold rounded-full lg:h-24 text-sm lg:text-2xl text-black tracking-wider  "
 				href="/doc/install"
 			>
-				Try it yourself!
+				<code class="normal-case">Try it yourself!</code>
 			</a>
 		</div>
 	</section>
 
 	<!--Features-->
-	<section class="mx-auto flex flex-col items-center my-24 sm:my-32">
-		<div class="w-full border-y-2 py-4 md:py-16 border-primary border-opacity-60">
+	<section class="mx-auto flex flex-col items-center my-24 sm:my-52">
+		<div class="w-full border-y-2 py-4 lg:py-16 border-primary border-opacity-60">
 			<div class="flex flex-wrap ">
 				<Feature title="SQL-first" content=" Your database schema is the source of truth. No ORM.">
 					<Storage />
@@ -112,21 +110,21 @@
 	<!-- Hero-->
 	<section class="text-zinc-400 body-font ">
 		<div
-			class="container mx-auto flex  px-5 py-24  sm:pb-96 lg:flex-row justify-center flex-col items-center"
+			class="container mx-auto flex  px-5 py-16  sm:pb-96 xl:pb-[27rem] lg:flex-row justify-center flex-col items-center"
 		>
-			<div class="xl:max-w-md lg:max-w-xs lg:w-full w-5/6 mb-10 lg:mb-0  bg-opacity-5">
+			<div class="xl:max-w-md lg:max-w-xs lg:w-full w-5/6 mb-10 lg:mb-0">
 				<img
-					class="w-full max-w-72 sm:max-h-96 xl:max-h-[26rem] h-full "
+					class="w-full max-w-72 sm:max-h-96 xl:max-h-[26rem] h-full brightness-75"
 					alt="Minimalist version of the logo"
 					src="/InvertedBgWhiteIcon44x44.svg"
 				/>
 			</div>
-			<div class="   lg:w-1/2 lg:pl-24 flex flex-col  lg:items-start md:text-left items-center ">
+			<div class=" lg:w-1/2 lg:pl-24 flex flex-col  lg:items-start md:text-left items-center ">
 				<h1
 					class="title-font text-center sm:text-left sm:text-4xl text-3xl mb-4 font-medium text-zinc-200"
 				>
-					Cornucopia is designed to
-					<br class="hidden lg:inline-block" />facilitate PostgreSQL in Rust
+					Designed to facilitate
+					<br class="hidden lg:inline-block " />PostgreSQL in Rust
 				</h1>
 				<div class="prose pb-16">
 					<ul>
@@ -145,10 +143,7 @@
 						</li>
 					</ul>
 				</div>
-				<div
-					class="grid grid-cols-2  gap-4
-		 sm:w-full sm:flex sm:flex-row sm:items-center"
-				>
+				<div class="grid grid-cols-2  gap-4 sm:w-full sm:flex sm:flex-row sm:items-center">
 					<!-- Downloads -->
 					<a href="https://crates.io/crates/cornucopia">
 						<img
@@ -159,25 +154,25 @@
 					</a>
 
 					<!-- Stars -->
-					<a href="https://github.com/LouisGariepy/cornucopia/stargazers">
+					<a href="https://github.com/cornucopia-rs/cornucopia/stargazers">
 						<img
 							class="grid-col-1"
 							alt="GitHub Repo stars"
-							src="https://img.shields.io/github/stars/LouisGariepy/cornucopia?color=%23D97706&logo=github&style=for-the-badge"
+							src="https://img.shields.io/github/stars/cornucopia-rs/cornucopia?color=%23D97706&logo=github&style=for-the-badge"
 						/>
 					</a>
 
 					<!-- Open issues-->
-					<a href="https://github.com/LouisGariepy/cornucopia/issues">
+					<a href="https://github.com/cornucopia-rs/cornucopia/issues">
 						<img
 							class="grid-col-1"
 							alt="GitHub issues"
-							src="https://img.shields.io/github/issues-raw/LouisGariepy/cornucopia?logo=github&style=for-the-badge"
+							src="https://img.shields.io/github/issues-raw/cornucopia-rs/cornucopia?logo=github&style=for-the-badge"
 						/>
 					</a>
 
 					<!-- License -->
-					<a href="https://github.com/LouisGariepy/cornucopia/blob/main/LICENSE">
+					<a href="https://github.com/cornucopia-rs/cornucopia#License">
 						<img
 							class="grid-col-1"
 							alt="Crates.io"
@@ -214,7 +209,7 @@
 			</a>
 			<!-- discord link-->
 			<a
-				href="https://github.com/LouisGariepy/cornucopia"
+				href="https://github.com/cornucopia-rss/cornucopia"
 				class="btn btn-lg btn-outline w-full z-50  rounded-full flex-1 btn-primary normal-case text-xl"
 			>
 				Take a look at the github
@@ -222,7 +217,7 @@
 		</div>
 
 		<div
-			class="absolute mb-20 sm:pt-32 -z-50 bottom-0 right-0 h-[34rem]  sm:h-[56rem] text-zinc-900 text-opacity-70"
+			class="absolute mb-20 xl:mb-[5rem] sm:pt-32 -z-50 bottom-0 right-0 h-[34rem]  sm:h-[56rem] text-zinc-900 text-opacity-70"
 		>
 			<Github class="w-full h-full " />
 		</div>

@@ -29,5 +29,3 @@ export const appState: Writable<AppState> = writable({
 	sidebarOpen: false,
 	sidebar: InstallLink
 });
-
-

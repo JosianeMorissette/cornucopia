@@ -9,8 +9,6 @@
 	import LinkButton from '$lib/actions/LinkButton.svelte';
 	import CloseIcon from '$lib/icons/actions/CloseIcon.svelte';
 
-	function handleClick() {}
-
 	export let sidebar: boolean;
 
 	function sidebarState() {
@@ -67,7 +65,7 @@
 
 				<LinkButton
 					componentClass=" md:px-4 text-xl md:text-2xl font-normal normal-case "
-					href="/blogList"
+					href="https://github.com/cornucopia-rs/cornucopia"
 				>
 					<Github class="w-12 h-12 mb-[1px] md:w-10 md:h-10" />
 				</LinkButton>
