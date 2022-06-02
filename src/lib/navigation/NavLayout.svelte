@@ -33,7 +33,7 @@
 		{/if}
 	</NavBar>
 
-	<main class="relative h-full overflow-y-auto overflow-x-hidden">
+	<main class="relative my-8 md:my-10 h-full overflow-y-auto overflow-x-hidden">
 		<!-- If sidebar-->
 		{#if sidebar}
 			<!--Small screen when sidebar-->

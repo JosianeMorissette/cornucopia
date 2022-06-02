@@ -126,7 +126,7 @@
 					Designed to facilitate
 					<br class="hidden lg:inline-block " />PostgreSQL in Rust
 				</h1>
-				<div class="prose pb-16">
+				<div class="prose prose-invert pb-16">
 					<ul>
 						<li>
 							Cornucopia aims to get out of your way, <b

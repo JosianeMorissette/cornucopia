@@ -17,7 +17,7 @@
 			</slot>
 		</div>
 	</div>
-	<div class="flex-grow prose ">
+	<div class="flex-grow">
 		<h3>{title}</h3>
 		<p>
 			{content}
