@@ -5,9 +5,6 @@
 	export let handleClick = () => {};
 </script>
 
-<button
-	on:click={handleClick}
-	class="{componentClass} hover:text-primary button flex items-center rounded-md"
->
+<button on:click={handleClick} class="{componentClass} flex items-center justify-center">
 	<slot>Empty button</slot>
 </button>

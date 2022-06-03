@@ -4,7 +4,7 @@
 
 <div class="">
 	<Button
-		componentClass="w-1/2 flex justify-center  my-6 max-w-3xl bg-primary text-primary-content rounded-full "
+		componentClass="rounded-full py-2 w-full max-w-xs bg-primary text-primary-content hover:bg-primary-focus my-6  mx-1"
 	>
 		<slot>empty button</slot>
 	</Button>

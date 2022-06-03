@@ -97,9 +97,5 @@
 		consequuntur obcaecati! Labore.</Citation
 	>
 
-	<Button>
-		<img alt="Office" aria-hidden="true" class="w-4 h-4 mr-2  " src="/BoldBlackIcon44x44.svg" />
-
-		button
-	</Button>
+	<Button>Button</Button>
 </DocLayout>
