@@ -22,7 +22,9 @@
 </svelte:head>
 
 <NavLayout>
-	<section class="mt-28 w-full flex flex-col items-center sm:items-start text-center sm:text-left">
+	<section
+		class=" mt-40 lg:mt-20 w-full flex flex-col items-center sm:items-start text-center sm:text-left"
+	>
 		<div
 			class="uppercase sm:normal-case text-xl sm:text-4xl md:text-5xl lg:text-7xl space-y-2 lg:space-y-5 text-neutral italic"
 		>
@@ -35,7 +37,7 @@
 			<h2 class="tracking-tight md:tracking-wide font-light">from your PostgreSQL</h2>
 		</div>
 		<div class="max-w-xs sm:max-w-xl xl:max-w-2xl w-full ">
-			<h3 class="mt-3 mb-14 w-full tracking-wide md:text-xl ">
+			<h3 class="mt-3 mb-10 w-full tracking-wide md:text-xl ">
 				Cornucopia is a small CLI utility resting on <Badge>tokio-postgres</Badge>
 				designed to facilitate PostgreSQL workflows in Rust.
 			</h3>
@@ -48,11 +50,13 @@
 	</section>
 
 	<!--Features-->
-	<section class="mx-auto flex flex-col items-center my-24 sm:my-40">
-		<h1 class="mb-6 sm:mb-10 lg:mb-14 text-zinc-300 font-semibold text-4xl sm:text-5xl lg:text-7xl">
+	<section class="mx-auto flex flex-col items-center my-24 md:my-48 sm:my-40">
+		<h1
+			class="mb-6 sm:mb-10 lg:mb-10 tracking-widest text-zinc-300 font-semibold text-4xl sm:text-5xl lg:text-7xl"
+		>
 			Features
 		</h1>
-		<div class="w-full border-y-2 py-4 lg:py-16 border-primary border-opacity-60">
+		<div class="w-full border-y-2 py-4 lg:py-10 border-primary border-opacity-60">
 			<div class="flex flex-wrap ">
 				<Feature title="SQL-first" content=" Your database schema is the source of truth. No ORM.">
 					<Storage />
