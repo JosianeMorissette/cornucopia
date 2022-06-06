@@ -17,16 +17,14 @@
 		</div>
 
 		<div class="max-w-4xl">
-			<div class="prose md:prose-lg max-w-none">
-				<h1 class="md:text-6xl">{title}</h1>
+			<h1 class="md:text-6xl">{title}</h1>
 
-				<h4 class="text-zinc-500 font-normal -mt-4 md:-mt-10">
-					{date_author}
-				</h4>
+			<h4 class="text-zinc-500 font-normal">
+				{date_author}
+			</h4>
 
-				<slot />
-				<Footer />
-			</div>
+			<slot />
+			<Footer />
 		</div>
 	</div>
 </NavLayout>

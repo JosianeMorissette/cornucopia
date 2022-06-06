@@ -1,6 +1,5 @@
 <script lang="ts">
-	import Sitation from '$lib/tags/Sitation.svelte';
-	import Code from '$lib/tags/Code.svelte';
+	import Citation from '$lib/tags/Citation.svelte';
 	import Paragraph from '$lib/tags/Paragraph.svelte';
 	import Table from '$lib/tags/table/Table.svelte';
 	import Th from '$lib/tags/table/Th.svelte';
@@ -15,6 +14,13 @@
 	import { appState } from '$lib/utils/appState';
 	import { InstallLink } from '$lib/utils/appState';
 	import DocLayout from '$lib/navigation/doc/DocLayout.svelte';
+	import H1 from '$lib/tags/H1.svelte';
+	import H2 from '$lib/tags/H2.svelte';
+	import Strong from '$lib/tags/Strong.svelte';
+	import H3 from '$lib/tags/H3.svelte';
+	import Ul from '$lib/tags/Ul.svelte';
+	import Li from '$lib/tags/Li.svelte';
+
 	$appState.sidebar = InstallLink;
 </script>
 
@@ -23,22 +29,21 @@
 </svelte:head>
 
 <DocLayout>
-	<!-- Content with typo -->
-	<h1>Install : This is a h1 title</h1>
+	<H1>Install : This is a h1 title</H1>
 
-	<h2>And a 2h title with its own style!</h2>
+	<H2>And a 2h title with its own style!</H2>
 
 	<Paragraph
 		>We can use my svelte component to add the content, like this paragraph! We can use the html
 		tags for headings directly! Or you can add<i>italic</i>, <b>bold</b> and
-		<strong>strong</strong> text! We made a <BoldItalic>bold and italic</BoldItalic> and
-		<StrongItalic>strong and italic</StrongItalic>compotents too! You can use
+		<Strong>strong</Strong> text! We made a <BoldItalic>bold and italic</BoldItalic> and
+		<StrongItalic>strong and italic</StrongItalic> compotents too! You can use
 		<Link href="/">a link</Link>. You can even add emojis! How cool is that?! 🤗
 	</Paragraph>
 
 	<div class="my-12">
 		<img
-			alt="Diagram of a use case of cornucopia"
+			alt="Diagram showing an example"
 			aria-hidden="true"
 			class="w-full h-full"
 			src="/CornucopiaDiagram.svg"
@@ -46,7 +51,7 @@
 	</div>
 
 	<!-- Grid-->
-	<h3>This grid is easy to use!</h3>
+	<H3>This grid is easy to use!</H3>
 	<Table>
 		<svelte:fragment slot="th">
 			<Th />
@@ -81,23 +86,16 @@
 			</tbody>
 		</svelte:fragment>
 	</Table>
-	<h3>We can do a title h3 for a list</h3>
-	<ul>
-		<li>And have items with li</li>
-		<li>There is no limit to the number of items ! 🤯</li>
-	</ul>
-	<Sitation>
+	<H3>We can do a title h3 for a list</H3>
+	<Ul>
+		<Li>And have items with li</Li>
+		<Li>There is no limit to the number of items ! 🤯</Li>
+	</Ul>
+	<Citation>
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ratione nulla aspernatur fugit
 		tenetur harum sint in quis! Esse reprehenderit voluptas laborum ea consequatur et! Ducimus at
-		consequuntur obcaecati! Labore.</Sitation
+		consequuntur obcaecati! Labore.</Citation
 	>
-	<Code
-		>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas beatae distinctio at
-		necessitatibus modi consectetur dolorem numquam laborum provident amet!</Code
-	>
-	<Button>
-		<img alt="Office" aria-hidden="true" class="w-4 h-4 mr-2  " src="/BoldBlackIcon44x44.svg" />
 
-		button
-	</Button>
+	<Button>Button</Button>
 </DocLayout>

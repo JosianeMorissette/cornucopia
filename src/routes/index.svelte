@@ -12,6 +12,9 @@
 	import Tune from '$lib/icons/Tune.svelte';
 	import NavLayout from '$lib/navigation/NavLayout.svelte';
 	import Badge from '$lib/tags/Badge.svelte';
+	import LinkButton from '$lib/actions/LinkButton.svelte';
+
+	let classButton = 'py-4 w-full rounded-full flex-1 ';
 </script>
 
 <svelte:head>
@@ -19,7 +22,9 @@
 </svelte:head>
 
 <NavLayout>
-	<section class=" mt-40 w-full flex flex-col items-center sm:items-start text-center sm:text-left">
+	<section
+		class=" mt-40 lg:mt-20 w-full flex flex-col items-center sm:items-start text-center sm:text-left"
+	>
 		<div
 			class="uppercase sm:normal-case text-xl sm:text-4xl md:text-5xl lg:text-7xl space-y-2 lg:space-y-5 text-neutral italic"
 		>
@@ -31,24 +36,27 @@
 			</h1>
 			<h2 class="tracking-tight md:tracking-wide font-light">from your PostgreSQL</h2>
 		</div>
-		<div class=" max-w-xs sm:max-w-xl xl:max-w-2xl  w-full">
-			<h3 class="mt-3 w-full tracking-wide md:text-xl ">
+		<div class="max-w-xs sm:max-w-xl xl:max-w-2xl w-full ">
+			<h3 class="mt-3 mb-10 w-full tracking-wide md:text-xl ">
 				Cornucopia is a small CLI utility resting on <Badge>tokio-postgres</Badge>
 				designed to facilitate PostgreSQL workflows in Rust.
 			</h3>
 
-			<a
-				class="mt-14 btn btn-primary btn-lg w-full font-semibold rounded-full lg:h-24 text-sm lg:text-2xl text-black tracking-wider  "
-				href="/doc/install"
+			<LinkButton
+				componentClass="bg-primary w-full ml-1 px-12 hover:bg-primary-focus rounded-full max-w-md lg:max-w-none text-lg md:text-2xl lg:text-3xl h-12 lg:h-24 text-base-100 tracking-widest "
+				href="/doc/install">Try it yourself!</LinkButton
 			>
-				<code class="normal-case">Try it yourself!</code>
-			</a>
 		</div>
 	</section>
 
 	<!--Features-->
-	<section class="mx-auto flex flex-col items-center my-24 sm:my-52">
-		<div class="w-full border-y-2 py-4 lg:py-16 border-primary border-opacity-60">
+	<section class="mx-auto flex flex-col items-center my-24 md:my-48 sm:my-40">
+		<h1
+			class="mb-6 sm:mb-10 lg:mb-10 tracking-widest text-zinc-300 font-semibold text-4xl sm:text-5xl lg:text-7xl"
+		>
+			Features
+		</h1>
+		<div class="w-full border-y-2 py-4 lg:py-10 border-primary border-opacity-60">
 			<div class="flex flex-wrap ">
 				<Feature title="SQL-first" content=" Your database schema is the source of truth. No ORM.">
 					<Storage />
@@ -99,9 +107,10 @@
 			</div>
 
 			<div class="py-8 xl:py-4">
-				<button
-					class=" flex border mx-auto w-full max-w-md btn-rounded btn-neutral btn btn-outline rounded-full"
-					>See the doc</button
+				<LinkButton
+					href="/doc/install"
+					componentClass=" border border-zinc-300 text-zinc-300 hover:bg-zinc-300 hover:text-base-100  mx-auto py-3 w-full max-w-sm rounded-full"
+					>See the doc</LinkButton
 				>
 			</div>
 		</div>
@@ -126,7 +135,7 @@
 					Designed to facilitate
 					<br class="hidden lg:inline-block " />PostgreSQL in Rust
 				</h1>
-				<div class="prose pb-16">
+				<div class="prose prose-invert pb-16">
 					<ul>
 						<li>
 							Cornucopia aims to get out of your way, <b
@@ -199,25 +208,26 @@
 			</b>
 		</h1>
 
-		<div class=" sm:ml-1 self-center md:self-start space-y-8 flex-col max-w-sm sm:max-w-md">
+		<div class="w-full sm:ml-1 self-center md:self-start space-y-10 flex-col max-w-sm sm:max-w-md">
 			<!-- contributing section-->
-			<a
+			<LinkButton
 				href="/doc/install"
-				class="btn w-full z-50 flex-1 btn-lg rounded-full btn-primary normal-case text-xl"
+				componentClass="{classButton} flex-1 rounded-full bg-primary text-base-100 hover:bg-primary-focus normal-case text-xl"
 			>
 				How to contribute
-			</a>
+			</LinkButton>
+
 			<!-- discord link-->
-			<a
+			<LinkButton
 				href="https://github.com/cornucopia-rss/cornucopia"
-				class="btn btn-lg btn-outline w-full z-50  rounded-full flex-1 btn-primary normal-case text-xl"
+				componentClass="{classButton} border border-primary text-primary hover:bg-primary-focus hover:border-none hover:text-base-100 normal-case text-xl"
 			>
 				Take a look at the github
-			</a>
+			</LinkButton>
 		</div>
 
 		<div
-			class="absolute mb-20 xl:mb-[5rem] sm:pt-32 -z-50 bottom-0 right-0 h-[34rem]  sm:h-[56rem] text-zinc-900 text-opacity-70"
+			class="absolute mb-20 xl:mb-[5rem] sm:pt-32 -z-50 bottom-0 right-0 h-[34rem]  sm:h-[56rem] text-zinc-800 text-opacity-90"
 		>
 			<Github class="w-full h-full " />
 		</div>

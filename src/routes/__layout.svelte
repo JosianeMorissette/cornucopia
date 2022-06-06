@@ -4,3 +4,9 @@
 </script>
 
 <slot />
+
+<style>
+	:global(body) {
+		background-color: #080602ff;
+	}
+</style>

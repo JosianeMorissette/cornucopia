@@ -1,3 +1,3 @@
-<div class="flex flex-wrap items-center">
+<div class="flex flex-wrap justify-center">
 	<slot>Empty table code</slot>
 </div>

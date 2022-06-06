@@ -3,7 +3,7 @@
 	import Button from '$lib/actions/Button.svelte';
 
 	import '/static/button_animation.css';
-	export let componentClass = 'hover:text-red-300 ';
+	export let componentClass = '';
 
 	export let href: string;
 	function handleClick() {

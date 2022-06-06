@@ -4,7 +4,7 @@
 
 <!--The top margin is the same as the default one for a list-->
 <div class="flex flex-col">
-	<div class=" sm:-my-4 lg:-my-3.5 sm:-mx-6 lg:-mx-8">
+	<div class="sm:-mx-6 lg:-mx-8">
 		<div class="inline-block min-w-full sm:px-6 lg:px-8">
 			<div class="overflow-hidden">
 				<table class="min-w-full border border-b-[0.12rem] {border_color} text-center">

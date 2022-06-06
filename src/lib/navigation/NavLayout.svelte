@@ -21,7 +21,7 @@
 <svelte:window on:resize={screenSize.update} />
 
 <div
-	class="antialiased text-base-content h-full w-full mx-auto px-4 lg:px-12 xl:px-24 sm:max-w-xl  md:max-w-2xl lg:max-w-5xl xl:max-w-[100rem]"
+	class="antialiased text-base-content overflow-h-hidden w-full mx-auto px-4 lg:px-12 xl:px-24 sm:max-w-xl  md:max-w-2xl lg:max-w-5xl xl:max-w-[100rem]"
 >
 	<NavBar {sidebar}>
 		<!-- If sidebar-->
@@ -33,7 +33,7 @@
 		{/if}
 	</NavBar>
 
-	<main class="relative h-full overflow-y-auto overflow-x-hidden">
+	<main class="relative mt-8 md:mt-10 h-full overflow-y-auto overflow-x-hidden">
 		<!-- If sidebar-->
 		{#if sidebar}
 			<!--Small screen when sidebar-->

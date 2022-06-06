@@ -2,6 +2,9 @@
 	export let href: string;
 </script>
 
-<a class="link link-primary whitespace-nowrap link-hover" {href}>
+<a
+	class="text-primary underline underline-offset-2 hover:text-primary-focus whitespace-nowrap link-hover"
+	{href}
+>
 	<slot>Empty link</slot>
 </a>
