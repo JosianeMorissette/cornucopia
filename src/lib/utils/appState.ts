@@ -1,7 +1,7 @@
 import { writable } from 'svelte/store';
 import type { Writable } from 'svelte/store';
 
-export interface AboutLayoutLink {
+export interface LayoutLink {
 	label: string;
 	href: string;
 	index: number;
@@ -18,10 +18,15 @@ export const BasicExampleLink = {
 	href: '/doc/basic_example',
 	index: 1,
 }
+export const TestLink = {
+	label: 'Test',
+	href: '/doc/test',
+	index: 2,
+}
 
 export type AppState = {
 	sidebarOpen: boolean;
-	sidebar: AboutLayoutLink;
+	sidebar: LayoutLink;
 
 };
 
