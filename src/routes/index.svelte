@@ -23,7 +23,7 @@
 
 <NavLayout>
 	<section
-		class=" mt-40 lg:mt-20 w-full flex flex-col items-center sm:items-start text-center sm:text-left"
+		class=" mt-40 lg:mt-40 w-full flex flex-col items-center sm:items-start text-center sm:text-left"
 	>
 		<div
 			class="uppercase sm:normal-case text-xl sm:text-4xl md:text-5xl lg:text-7xl space-y-2 lg:space-y-5 text-neutral italic"
@@ -52,7 +52,7 @@
 	<!--Features-->
 	<section class="mx-auto flex flex-col items-center my-24 md:my-48 sm:my-40">
 		<h1
-			class="mb-6 sm:mb-10 lg:mb-10 tracking-widest text-zinc-300 font-semibold text-4xl sm:text-5xl lg:text-7xl"
+			class="mb-6 sm:mb-10 lg:mb-10 tracking-widest text-zinc-400 font-semibold text-4xl sm:text-5xl lg:text-7xl"
 		>
 			Features
 		</h1>

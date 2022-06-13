@@ -1,21 +1,34 @@
 <script lang="ts">
-	import DocLayout from '$lib/navigation/doc/DocLayout.svelte';
+	import Citation from '$lib/tags/Citation.svelte';
+	import Button from '$lib/tags/Button.svelte';
 	import { appState } from '$lib/utils/appState';
+	import { BasicExampleLink } from '$lib/utils/appState';
+	import DocLayout from '$lib/navigation/doc/DocLayout.svelte';
+	import H1 from '$lib/tags/H1.svelte';
+	import H3 from '$lib/tags/H3.svelte';
+	import Ul from '$lib/tags/Ul.svelte';
+	import Li from '$lib/tags/Li.svelte';
 
-	import { InstallLink } from '$lib/utils/appState';
-	$appState.sidebar = InstallLink;
+	$appState.sidebar = BasicExampleLink;
 </script>
 
 <svelte:head>
-	<title>Basic example</title>
+	<title>Install Cornucopia</title>
 </svelte:head>
 
 <DocLayout>
-	<h1>Basic Example</h1>
-	<p>
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, optio ullam? Architecto
-		placeat corporis natus amet in a laudantium doloremque?
-	</p>
+	<H1>Basic example</H1>
 
-	<img class="w-full h-full" alt="Basic example" aria-hidden="true" src="/CornucopiaDiagram.svg" />
+	<H3>We can do a title h3 for a list</H3>
+	<Ul>
+		<Li>And have items with li</Li>
+		<Li>There is no limit to the number of items ! 🤯</Li>
+	</Ul>
+	<Citation>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas ratione nulla aspernatur fugit
+		tenetur harum sint in quis! Esse reprehenderit voluptas laborum ea consequatur et! Ducimus at
+		consequuntur obcaecati! Labore.</Citation
+	>
+
+	<Button>Button</Button>
 </DocLayout>
