@@ -45,10 +45,12 @@
 						class="relative brightness-50 opacity-50 bg-base-300 saturate-50 grayscale h-full"
 					>
 						<slot name="content" />
+						<Footer />
 					</div>
 				{:else}
 					<!-- If sidebar close-->
 					<slot name="content" />
+					<Footer />
 				{/if}
 			{:else}
 				<!--Large screen when sidebar-->
