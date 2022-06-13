@@ -54,7 +54,7 @@
 				<!--Large screen when sidebar-->
 				<div class="lg:flex fixed top-0 antialiased h-full w-full items-center">
 					<div class="{sidebar_w} flex-none -ml-2 h-3/4 mt-20 overflow-y-auto">
-						<div class="h-full px-2 space-y-3">
+						<div class="px-2 space-y-3">
 							<slot name="sidebar" />
 						</div>
 					</div>
