@@ -2,14 +2,14 @@
 	import Citation from '$lib/tags/Citation.svelte';
 	import Button from '$lib/tags/Button.svelte';
 	import { appState } from '$lib/utils/appState';
-	import { BasicExampleLink } from '$lib/utils/appState';
+	import { ContributeLink } from '$lib/utils/appState';
 	import DocLayout from '$lib/navigation/doc/DocLayout.svelte';
 	import H1 from '$lib/tags/H1.svelte';
 	import H3 from '$lib/tags/H3.svelte';
 	import Ul from '$lib/tags/Ul.svelte';
 	import Li from '$lib/tags/Li.svelte';
 
-	$appState.sidebar = BasicExampleLink;
+	$appState.sidebar = ContributeLink;
 </script>
 
 <svelte:head>
@@ -17,7 +17,7 @@
 </svelte:head>
 
 <DocLayout>
-	<H1>Basic example</H1>
+	<H1>Contribute</H1>
 
 	<H3>We can do a title h3 for a list</H3>
 	<Ul>

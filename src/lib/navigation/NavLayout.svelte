@@ -45,22 +45,24 @@
 						class="relative brightness-50 opacity-50 bg-base-300 saturate-50 grayscale h-full"
 					>
 						<slot name="content" />
+						<Footer />
 					</div>
 				{:else}
 					<!-- If sidebar close-->
 					<slot name="content" />
+					<Footer />
 				{/if}
 			{:else}
 				<!--Large screen when sidebar-->
-				<div class="lg:flex fixed hidden top-0 antialiased h-full w-full items-center">
-					<div class="{sidebar_w} flex-none -ml-2 h-3/4 mt-24 overflow-y-auto">
-						<div class="h-full px-2 space-y-3">
+				<div class="lg:flex fixed top-0 antialiased h-full w-full items-center">
+					<div class="{sidebar_w} flex-none -ml-2 h-3/4 mt-20 overflow-y-auto">
+						<div class="px-2 space-y-3">
 							<slot name="sidebar" />
 						</div>
 					</div>
 				</div>
 
-				<div class="w-full h-full flex justify-center lg:justify-start mt-[3.1rem]">
+				<div class="w-full h-full flex justify-center lg:justify-start ">
 					<div
 						class="{sidebar_w} xl:mr-20 {$screenSize === 'Large' ? 'block' : 'hidden'}  flex-none"
 					/>

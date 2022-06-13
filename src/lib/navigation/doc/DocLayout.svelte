@@ -7,7 +7,7 @@
 	<DocSidebar slot="sidebar" />
 
 	<div class="flex" slot="content">
-		<section>
+		<section class="xl:min-h-screen">
 			<slot />
 		</section>
 	</div>

@@ -31,7 +31,7 @@ const config = {
 				'neutral-focus': '#e9a30cff' /* Neutral color - focused */,
 				'neutral-content': '#080602ff' /* Foreground content color to use on neutral color */,
 
-				'base-100': '#130413ff' /* Base color of page, used for blank backgrounds */,
+				'base-100': '#080602ff' /* Base color of page, used for blank backgrounds */,
 				'base-200': '#1C1B1Cff' /* Base color, a little darker */,
 				'base-300': '#272627ff' /* Base color, even more darker dcdfe6 */,
 				'base-content': '#f8f6e8ff' /* Foreground content color to use on base color */,
